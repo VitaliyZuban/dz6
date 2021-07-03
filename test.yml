@@ -1,0 +1,18 @@
+---
+
+#Employee records
+- Ivan
+  name: Ivan
+  job: Developer
+  skills:
+    - python
+    - perl
+    - pascal
+
+- Vasya
+  name: Vesya Popov
+  job: Developer
+  skills:
+    - lisp
+    - fortran
+    - erland
