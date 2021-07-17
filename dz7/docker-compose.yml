@@ -5,7 +5,7 @@ services:
     volumes:
       - type: bind
         source: ./tget
-        target: /home
+        target: /root/webapps
 
   tomcat:
     image: amd64/tomcat:9.0
