@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  ubntmvn:
+    build: ubntmvn-custom
+    volumes:
+      - ./target:/root/boxfuse-sample-java-war-hello/target/
+
+  tomcat:
+    image: davidcaste/alpine-tomcat:jre7tomcat8
+    volumes:
+      - ./target:/opt/tomcat/webapps/
+    links:
+      - ubntmvn
+    ports:
+      - "80:8080"

@@ -19,7 +19,7 @@ services:
       - db
       - redis
     volumes:
-      - ./htdocs:/var/html
+      - ./htdocs:/var/www/html
 
   db:
     image: mariadb:10.1
