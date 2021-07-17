@@ -3,9 +3,8 @@ services:
   ubntmvn:
     build: ubntmvn-custom
     volumes:
-      - type: bind
-        source: ./tget
-        target: /root/webapps
+      - .new:/root/webapps
+
 
   tomcat:
     image: amd64/tomcat:9.0
