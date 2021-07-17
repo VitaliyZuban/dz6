@@ -3,7 +3,7 @@ services:
   ubntmvn:
     build: ubntmvn-custom
     volumes:
-      - ./target:/root/boxfuse-sample-java-war-hello/target/
+      - ./target:/home
 
   tomcat:
     image: amd64/tomcat:9.0
