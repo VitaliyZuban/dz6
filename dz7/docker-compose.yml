@@ -6,6 +6,7 @@ services:
       - type: bind
         source: ./tget
         target: /home
+      - ./tget:/home
 
   tomcat:
     image: amd64/tomcat:9.0
