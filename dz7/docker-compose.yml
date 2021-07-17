@@ -3,7 +3,7 @@ services:
   ubntmvn:
     build: ubntmvn-custom
     volumes:
-      - ./new:/root/webapps/
+      - ./tget:/root/webapps/
 
 
   tomcat:

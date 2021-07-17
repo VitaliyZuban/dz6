@@ -10,6 +10,7 @@ WORKDIR /root/boxfuse-sample-java-war-hello
 RUN mvn -f pom.xml package
 RUN cp /root/boxfuse-sample-java-war-hello/target/hello-1.0.war /root/webapps/
 WORKDIR /root/webapps/
+RUN ls -la
 RUN mkdir test_dir
 
 CMD ["catalina.sh", "run"]
