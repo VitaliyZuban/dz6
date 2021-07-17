@@ -3,14 +3,21 @@ services:
   ubntmvn:
     build: ubntmvn-custom
     volumes:
-      - ./tget:/root/webapps/
+      - type: volume
+        source: vol1
+        target: /root/webapps
 
 
   tomcat:
     image: amd64/tomcat:9.0
     volumes:
-      - ./tget:/usr/local/tomcat/webapps/
+      - type: volume
+        source: vol1
+        target: /usr/local/tomcat/webapps
     links:
       - ubntmvn
     ports:
       - "80:8080"
+
+volumes:
+  vol1:
