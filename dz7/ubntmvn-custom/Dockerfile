@@ -10,5 +10,7 @@ RUN mvn -f pom.xml package
 RUN cp /root/boxfuse-sample-java-war-hello/target/hello-1.0.war /home
 WORKDIR /home
 RUN ls -la
+RUN mkdir test2
+RUN ls -la
 
 CMD ["bash"]
