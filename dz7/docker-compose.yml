@@ -6,9 +6,9 @@ services:
       - ./target:/root/boxfuse-sample-java-war-hello/target/
 
   tomcat:
-    image: davidcaste/alpine-tomcat:jre7tomcat8
+    image: amd64/tomcat:9.0
     volumes:
-      - ./target:/opt/tomcat/webapps/
+      - ./target:/usr/local/tomcat/webapps/
     links:
       - ubntmvn
     ports:
