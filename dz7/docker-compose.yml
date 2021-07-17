@@ -3,7 +3,9 @@ services:
   ubntmvn:
     build: ubntmvn-custom
     volumes:
-      - ./target:/home
+      - type: volume
+        source: target
+        target: /home
 
   tomcat:
     image: amd64/tomcat:9.0
